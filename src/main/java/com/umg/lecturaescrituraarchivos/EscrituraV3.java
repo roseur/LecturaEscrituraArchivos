@@ -20,7 +20,7 @@ public class EscrituraV3 {
             fw.write("Hola mundo\n");
             fw.append("Esta es otra linea\n");
         } catch (IOException ex) {
-            System.out.println("Ocurrio un problema al tratar de escribir el archivo");
+            System.out.println("Ocurrio un error al escribir el archivo");
             System.out.println(ex.getMessage());
         }
         System.out.println("Archivo guardado exitosamente");

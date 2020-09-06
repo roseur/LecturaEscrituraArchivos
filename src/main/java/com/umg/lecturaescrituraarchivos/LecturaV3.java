@@ -15,9 +15,15 @@ import java.nio.file.Paths;
  */
 public class LecturaV3 {
 
-    public static void main(String[] args) throws IOException {
-        String path = "C:\\Users\\Rosi\\Desktop\\pruebaLectura.txt";
-        String content = Files.readString(Paths.get(path));
-        System.out.println(content);
+    public static void main(String[] args) {
+        try {
+            String path = "C:\\Users\\Rosi\\Desktop\\pruebaLectura.txt";
+            String contenido = Files.readString(Paths.get(path));
+            System.out.println(contenido);
+        } catch (IOException ex) {
+            System.out.println("Ocurrio un error al leer el archivo");
+            //Imprimir el mensaje de error que Java dio
+            System.out.println(ex.getMessage());
+        }
     }
 }

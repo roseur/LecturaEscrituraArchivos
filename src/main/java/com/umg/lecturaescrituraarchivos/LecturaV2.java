@@ -23,7 +23,8 @@ public class LecturaV2 {
             }
         } catch (Exception ex) {
             System.out.println("Ocurrio un error al leer el archivo");
-            System.out.println(ex.getMessage()); //Imprimir el mensaje de error que Java dio
+            //Imprimir el mensaje de error que Java dio
+            System.out.println(ex.getMessage());
         }
 
     }
